@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "./styles/global.css";
 const pageTitle = "Homepage";
 ---
@@ -13,10 +15,12 @@ const pageTitle = "Homepage";
         <title>{pageTitle}</title>
     </head>
     <body>
-        <a href="/fuzzy-adventure">Home</a>
-        <a href="/fuzzy-adventure/about">About</a>
-        <a href="/fuzzy-adventure/blog">Blog</a>
+        <Header />
 
         <h1>{pageTitle}</h1>
+        <Footer />
+        <script>
+            import "../scripts/menu.js";
+        </script>
     </body>
 </html>
